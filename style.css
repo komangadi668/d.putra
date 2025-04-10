@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav .nav-link {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-link:hover,
+  .nav-link.active {
+    color: orange;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+nav .nav-link a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ;
+}
+nav .nav-link a:hover {
+   text-decoration: underline;
+   color: #ff6600;
+   
+}
+
+.logo h2 {
+    font-size: 50px;
+}
+
+.logo h2 span {
+    color: red;
+}
+
+section {
+    width: 100%;
+    padding: 60px 10%;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(goku.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.home .home-teks {
+    width: 60%;
+}
+
+.home .home-teks h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+    
+
+}
+.home .home-teks p {
+    color: white;
+    font-size: 25px;
+   
+}
+
+.btn  {
+    top: 30px;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: #ff8533;
+    box-shadow: 0 6px 25px rgba(255, 102, 0, 0.6);
+    transform: scale(1.05);
+}
+   
+  
+
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+.journey .journey-teks {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.journey-content {
+   display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+   width: 100%;
+   gap: 30px;
+}
+
+.journey-content .row {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.journey-img {
+    overflow: hidden;
+    border-radius: 10px;
+   
+}
+
+.journey-img img {
+    width: 100%; 
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+}
+.journey-img:hover img {
+    transform: scale(1.6); /* memperbesar gambar */
+}
+
+.home2 {
+    background-image: url(goku2.jpg);
+    width:100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+   
+}
+.home2-teks {
+    width: 60%;
+
+}
+.home2-teks h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.btn2 {
+  
+    top: 30px;
+    display: inline-block;
+    padding: 12px 30px;
+    
+    color: white;
+    font-size: 16px;
+    font-weight: bold ;
+    text-decoration: none;
+    border: 2px solid  #ff8533 ;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn2:hover {
+    background-color: #ff8533;
+    box-shadow: 0 6px 25px rgba(255, 102, 0, 0.6);
+    transform: scale(1.05);
+}
+   
+
+.why-choose {
+    padding: 40px;
+    text-align: center;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  
+    width: 100%;
+    height: auto;
+    gap: 80px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-container .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100%;
+    gap: 20px;
+   
+}
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 0 10px sandybrown;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+
+.image-small {
+    height: 100%;
+}
+
+
+
+
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid-item, .card {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Tambahan delay biar animasi masuknya bergiliran */
+.grid-container .grid-item:nth-child(1),
+.grid-container .card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.grid-container .grid-item:nth-child(2),
+.grid-container .card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.grid-container .grid-item:nth-child(3),
+.grid-container .card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.grid-container .grid-item:nth-child(4),
+.grid-container .card:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+@media (max-width: 768px) {
+    nav .nav-link {
+        display: none;
+    }
+    .home .home-teks h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        
+    
+    }
+    .home .home-teks p {
+        color: white;
+        font-size: 20px;
+       
+    }
+    .home .home-teks {
+        width: 100%;
+    }
+    .journey-content {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        width: 100%;
+        gap: 30px;
+     }
+    
+    .home2-teks {
+        width: 100%;
+    
+    }
+    .home2-teks h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      
+        width: 100%;
+        height: auto;
+        gap: 80px;
+    }
+}
